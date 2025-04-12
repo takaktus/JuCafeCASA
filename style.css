@@ -1,11 +1,14 @@
 .header{
 }
+
 .title{
 
 }
+
 .title__logo{
 
 }
+
 .title__text{
 
 }
@@ -21,13 +24,15 @@ nav{
 .section__banner{
 
 }
+
 .section__banner__text{
 
 }
-.banner__text--bold{
+
+#banner__text--bold{
 
 }
-.banner__text--light{
+#banner__text--light{
 
 }
 
@@ -134,3 +139,30 @@ nav{
 .section__model--kiosk__text{
 
 }
+
+
+
+footer{
+
+}
+.footer__social{
+
+}
+.footer__social--text{
+
+}
+.footer__social--icons{
+
+}
+.footer__contact{
+
+}
+.footer__contact--text{
+
+}
+
+.footer__contact--icons{
+
+}
+
+.footer__signature{}
