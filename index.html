@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <!--INSERIR MEDIA QUERIE-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--reset CSS-->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Me+Again+Down+Here&display=swap');
-    </style>
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>JuCafé</title>
@@ -22,8 +21,8 @@
                 <h1 class="header__text"><span class="ju">Ju</span>Café</h1>
             </div>
 
-            <nav>
-                <ul>
+            <nav class="header__nav">
+                <ul class="header__nav--list">
                     <li><a href="#benefits">Benefícios</a></li>
                     <li><a href="#testament">Depoimentos</a></li>
                     <li><a href="#model">Franquias</a></li>
@@ -40,12 +39,12 @@
 
 
                     <article class="section__banner--buttons">
-                        <div class="banner__buttons--branco">
-                            <button>Saber mais</button>
-                        </div>
-                        <div class="banner__buttons--laranja">
-                            <button>Registrar Interesse</button>
-                        </div>
+                        
+                            <button class="banner__buttons--saber">Saber mais</button>
+                        
+                      
+                            <button class="baner__buttons--registrar">Registrar Interesse</button>
+                       
                     </article>
                 </article>
             </section>
@@ -55,21 +54,22 @@
 
 
                 <article class="section__benefits--market">
-                    <div class="section__benefits--title__div">
                     <h2 class="section__benefits--title">Benefícios e Vantagens</h2>
-                    </div>
+                    <img class="section__benefits--market__img" src="/img/Increase.png" alt="Crescimento do mercado">
                     <p class="section__benefits--market__title">Um mercado em expansão!</p>
                     <p class="section__benefits--market__text">Projeção de 15% de crescimento do franchising em 2024</p>
                 </article>
 
 
                 <article class="section__benefits--income">
+                    <img class="section__benefits--income__img" src="/img/Increase.png" alt="Rendimento">
                     <p class="section__benefits--income__title">Ótimos rendimentos</p>
                     <p class="section__benefits--income__text">Mercado de franquia alimentícia fatura em média 52bi</p>
                 </article>
 
 
                 <article class="section__benefits--support">
+                    <img class="section__benefits--support__img" src="/img/Increase.png" alt="Suporte e treinamentos">
                     <p class="section__benefits--support__title">Suporte e treinamentos</p>
                     <p class="section__benefits--support__text">Todo apoio que o novo franqueado necessita!</p>
                 </article>
@@ -78,45 +78,50 @@
 
 
             <section class="section__testament"><a id="testament"></a>
-                <article class="section__testament--title">
-                    <h2>Depoimentos</h2>
-                </article>
+
+                <h2 class="section__testament--title">Depoimentos</h2>
+
 
 
                 <article class="section__testament--text">
-                    <p>“Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas quando conheci a
-                        JuCafé e seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto
-                        que
-                        aprecio.
-                        Estou muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e
-                        confiança.”
-                    </p>
+                    <div class="section__testament--text__left">
+                        <p>“Sempre gostei de café mas nunca pensei em transformar isto em um negócio, <br>mas quando
+                            conheci a
+                            JuCafé e seu modelo de negócio passei a vislumbrar um futuro <br>promissor atuando com um
+                            produto
+                            que
+                            aprecio.
+                            Estou muito realizada e agradeço a todo apoio <br>da franquia nesta relação construída com
+                            diálogo e
+                            confiança.”
+                        </p>
+                        <article class="section__testament--sayuri">
+                            <h2>Luiza Sayuri</h2>
+                            <p class="section__testament--sayuri__city">Franqueada, Santos SP</p>
+                        </article>
+                    </div>
                 </article>
 
 
-                <article class="section__testament--sayuri">
-                    <h2>Luiza Sayuri</h2>
-                    <p class="section__testament--sayuri__city">Franqueada, Santos SP</p>
+                <article class="section__testament--sayuri__div">
+                    <img class="section__testament--sayuri__img" src="/img/sasa.jpeg" alt="Sayuri">
                 </article>
 
-
-                <article class="section__testament--sayuri__img">
-                    <img src="img-JuCafe/sayuri.png" alt="Sayuri">
-                </article>
             </section>
 
 
             <section class="section__model"><a id="model"></a>
-                <article class="section__model--title">
-                    <h2>Modelo de Negócio</h2>
-                </article>
+                
+                    <h2 class="section__model--title"> Modelo de Negócio</h2>
+                
 
 
                 <article class="section__model--bistro">
-                    <div class="section__model--bistro__img">
-                        <img src="./img-JuCafe/img/modeloBistro_Dsk.png" alt="Modelo Bistro">
+                    
+                        <img class="section__model--bistro__img" src="img/modeloBistro_Dsk.png" alt="Modelo Bistro">
+                        <img class="section__model--bistro__img__mobile" src="img/modeloBistro_Cel.png" alt="Modelo Bistro">
                         <!--inserir o MEDIA QUERIE-->
-                    </div>
+                    
 
 
                     <h2 class="section__model--bistro__title">Modelo Bistrô</h2>
@@ -131,10 +136,9 @@
 
 
                 <article class="section__model--kiosk">
-                    <div class="section__model--kiosk__img">
-                        <img src="./img-JuCafe/img/modeloQuiosque_Dsk.png" alt="Modelo Quiosque">
+                        <img class="section__model--kiosk__img" src="img/modeloQuiosque_Dsk.png" alt="Modelo Quiosque">
+                        <img class="section__model--kiosk__img__mobile" src="./img/modeloQuiosque_Cel.png" alt="Modelo Quiosque">
                         <!--inserir o MEDIA QUERIE-->
-                    </div>
 
 
                     <h2 class="section__model--kiosk__title">Modelo Quiosque</h2>
@@ -148,32 +152,28 @@
                 </article>
             </section>
         </main>
-        <footer>
-            <div class="footer__social">
-                <div class="footer__social--text">
-                    <p>Siga-nos nas redes Sociais</p>
+        <footer class="footer">
+            <section class="footer__up">
+                <div class="footer__social">
+                    <div class="footer__social--text">
+                        <p>Siga-nos nas redes Sociais</p>
+                    </div>
+
+
+                    <div class="footer__social--icons">
+                        <a href="https://www.instagram.com/jucafeoficial/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/jucafeoficial" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
                 </div>
 
-
-                <div class="footer__social--icons">
-                    <a href="https://www.instagram.com/jucafeoficial/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/jucafeoficial" target="_blank"><i
-                            class="fa-brands fa-facebook"></i></a>
-                </div>
-            </div>
-
-
-            <div class="footer__contact">
-                <div class="footer__contact--text">
+                <div class="footer__contact">
+                    <i class="fa-solid fa-phone"></i>
                     <p>Entre em contato 0800 222 0032</p>
                 </div>
 
-
-                <div class="footer__contact--icons">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-            </div>
+            </section>
 
 
             <div class="footer__signature">
